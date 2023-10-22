@@ -38,4 +38,12 @@ export const projects = [
   },
 ];
 
-export const navbarItems = ["about","projects","resume"]
+export const certificates = [
+  {
+    name: "CAREER CAMP - WEB DEVELOPMENT",
+    description: `JAVA | FRONTEND | REACTJS - Coding Ninjas | 2023`,
+    certificateLink:
+      "https://drive.google.com/file/d/1kLnIQPDt-KzYPGwXtrQBQuzO-TI4rnvi/view?usp=sharing",
+  }
+]
+export const navbarItems = ["about","projects","resume","certificates"]

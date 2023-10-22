@@ -1,31 +1,24 @@
-import { AppBar, Box, Grid, Toolbar, Typography, capitalize } from "@mui/material";
+import { AppBar, Toolbar } from "@mui/material";
 import React, { useState } from "react";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Link from "@mui/material/Link";
-import Home from "../Pages/Home";
-import { useParams } from "react-router-dom";
-import styled from "@emotion/styled";
 import { navbarItems } from "../Data/constants";
 
 const Navbar = (props) => {
-  //   const [value, setValue] = useState("home");
-  const { value, setValue } = props;
-  const { page } = useParams();
+  const [value, setValue] = useState("home");
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    console.log(page);
   };
-  const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
   return (
     <>
       <AppBar
         sx={{
-          background: "#E5E5E5",
+          background: "linear-gradient(120deg,darkgray,white)",
           justifyContent: "center",
           alignItems: "center",
           marginX: "5",
+          zIndex: "5",
         }}
         position="fixed"
       >
@@ -33,24 +26,46 @@ const Navbar = (props) => {
           <Tabs
             value={value}
             onChange={handleChange}
-            textColor="secondary"
+            textColor="inherit"
             indicatorColor="none"
             aria-label="secondary tabs example"
           >
-            <Tab value="home" label="Home" href="/" sx={{fontWeight:"bold",fontFamily:"inherit",textTransform:"capitalize"}}/>
-            {navbarItems.map((item)=>{
-                return <Tab value={item} label={item} href={`/${item}`} sx={{fontWeight:"bold",fontFamily:"inherit",textTransform:"capitalize"}}/>
-            })}
-            {/* <Tab value="about" label="about" href="/about" />
-            <Tab value="projects" label="projects" href="/projects" />
             <Tab
-              value="certificates"
-              label="certificates"
-              href="/certificates"
+              value={value}
+              label={<HomeRoundedIcon />}
+              href="/"
+              sx={{
+                width: "auto",
+                minWidth: 50,
+                fontWeight: "bold",
+                fontFamily: "inherit",
+                textTransform: "capitalize",
+                fontSize: "1rem",
+                color: "inherit",
+                padding: "0",
+              }}
             />
-            <Tab value="resume" label="resume" href="/resume"/> */}
+            {navbarItems.map((item, index) => {
+              return (
+                <Tab
+                  value={item}
+                  label={item}
+                  href={`/${item}`}
+                  sx={{
+                    width: "auto",
+                    minWidth: 70,
+                    fontWeight: "bold",
+                    fontFamily: "inherit",
+                    textTransform: "capitalize",
+                    fontSize: { xs: "0.75rem", sm: "1rem" },
+                    color: "inherit",
+                    padding: { xs: "0.1rem", sm: "1rem" },
+                  }}
+                  key={index}
+                />
+              );
+            })}
           </Tabs>
-          {page}
         </Toolbar>
       </AppBar>
       <Toolbar />

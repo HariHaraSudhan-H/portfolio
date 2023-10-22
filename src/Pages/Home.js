@@ -8,16 +8,16 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 const Home = () => {
   return (
-    <Box sx={{ justifyContent: "center", textAlign: "center", marginY: "10%" }}>
+    <Box sx={{ justifyContent: "center", textAlign: "center", marginY: "10vh" }}>
       <Avatar
         alt="Remy Sharp"
-        src="https://lh3.googleusercontent.com/pw/ADCreHdhna5i5NSSQTdW0nqFbHQRZXoqguWBrIPhPlwcubqN2zZa_mRhCFmlShZ_FRuMA90DI-JwGBut4x-Q6uJUceo7ZHFN5xhVatldltkFarH2wUHqadpvIqEyEmtStnhq5SQzw5Gq-FRrmuyNorHWdd5vl3ycX2lPdIPuIbzuicaehSIP0sg9AvfEX5RCFfh37M9A6NSsf3pbG6CKr_eREuBruo0H2_hM5wGxP0Iu__Gat-GTmPwyvxFY8DnYU_ivEOBtobIpEBA9-N4vnJiOXOflsc0k0S8Qi0nQAGJttvAUP14nc9vOMVBOBWHrGjNLJHLPZFvGyCJyQEw5bsB6OK0SfjHOcicI1FsKMLRJdgMffkdnWCR2gNTmLDh-_UYvwVhLkTXg8lGNOat9cgkHTnJpqo0IPKNybKLpQFmRQlNY9raz38WvJsJImfgDsgAYxuhHqoy80yp2CikpdYAiMvXjWu3YUvSfE9I8euVpWh5rlIw_JjuxfxSnz051An9ZCWE_ZPegFhDa3i7lzN-cDk5ZqacZ9Y8KNAyYgMS4ITlc9d439CJYO6YW1VdyjWzduZLUpzRfQFh-cY5vb7lB12h9qxWJcWiwh_ioWteTnv0b83mTGtxNBrVsfikW765OSoDMJWNN89Q3n25AxgkypM_9Tqev3biEA2mboOB_DcRMlx-OyjGjWUYlh26cmleUTv-jk32rSgpR276-ugQjnSbXTKVHlYqHgWPtCQFvMqTh0TKfXVnNBlm_wKfxn_h0yEMrDmukzdSNhenCeER1ARTUcmTka3nqqhdtIG84anLzEoCH8GLLGA-jdnxDkRY_sY48NoB9OUI9nrYrg1gWYr2rZEtvnOH-0TwNqio7RvwYL2xCyY9Cs88Qt_-WXnX48tKPMjJ8EIUX32sLd2gbZG4hT9ifbFujtUCmXoTFhBAhqbt2nBkNsk5vWplwCqJulcFO_axBX9nq60Eyv4cH0-AmqDnAkBoRGmM=w612-h612-s-no-gm?authuser=0"
-        sx={{ width: 250, height: 250, marginX: "auto" }}
+        src="https://lh3.googleusercontent.com/pw/ADCreHfa2V6FmRVZlrFJM4qvwFt7gh6-eZxiE_WTgemGBm6sXgUAArc1KRhyUTLAEfHsyGEeN3ig4oqEwiuIed9bm1jqGSqaCFUL46P2TMvBxPjzzDKbunMc6AjPpczqrhkOm0rI_xRVCV0QkQg-ftDwo7SfCRRDi1qcW6Z4JkfTftbLW-LD_5uRR0OkcNuIa0F9JGONCiyPJVPgdQPzLC0zaJqVrSbeaIsM_JyaNgbG1cILpgQknyenAJFy3UBee6L1arJRnZMGUjmphP357hWFwJaozWeIn-XyA8ZsxSoXFgN9pUgscpokDEQhsz1k6YUb06GjvnVZMbsOdnjaQKrkl0zXt98yM08r7i-uz1Bx52U1aMALp0p5n5rElsCS4iu78mXGhGfNFmZJ4b-zO2CyPs3vJaNYiFuszSWj6CQyTT1_Za2g7YD3x0rjoEkubRCstlJNWS4bykVuxErksMhqb-_5hbioA9O6tfwI5x5e5TzHOBBQUdVAwztuPxviZ4xoU2_CgD5iiKz8oW_RaAOWerZxqx6AywO2fPUm4IM-pNmPDiz0szWRHngENXNjkwxeP9v8IquOVOXZqYQFPhsGVCkW5RueoRZgciGHPIP6zj0IhPPqDsiyggv2b-WA5DjFACSbwGUt6IEeqbxFOflhM-AwZqccexWGtLpjHytyH9fbODwXpSXzTCoK4ez_1GBYMAKH_O62gtvEVJhDfTgalursSI23Y7TVjFMIB34pfZ2Pe-3BXgQQm2floR9ZF9RrXgBEyrl-dd8_U7fs6Wvux9WPhr2kfz0pqq9hl5V9sHoz-Uc3ooYD8NtF7aG_hK6UX29r3-t9nOhVxTkf3FkHmxQPQeBLkrzH6f2pWqm5y_Dazi_Y9at4pC5I-OgGHvHR6Na4A4T1A-eF6BQqXiBi0TFRfOo2cKsgjgjr7OMGXKMjOkiFaMLGH_8XS_EtD9983D16BhJcV8XsTAYXXXUuTuEl9CO9EX97rwc=w612-h612-s-no-gm?authuser=0"
+        sx={{ width: {xs:200,md:250}, height: {xs:200,md:250}, marginX: "auto" }}
       />
       <Typography
         sx={{
           fontWeight: "bold",
-          fontSize: "2rem",
+          fontSize: {xs:"1.75rem",md:"2rem"},
           marginY: 1,
           fontFamily: "inherit",
           fontWeight: "800",
@@ -29,19 +29,44 @@ const Home = () => {
         Frontend Web Developer
       </Typography>
       <Typography>Design Engineer | Tata Technologies | Pune</Typography>
-      <Link href="https://github.com/HariHaraSudhan-H" target="_blank"  underline="none" color={"black"}>
+      <Link
+        href="https://github.com/HariHaraSudhan-H"
+        target="_blank"
+        underline="none"
+        color={"black"}
+      >
         <GitHubIcon sx={{ margin: "1%" }} />
       </Link>
-      <Link href="https://www.linkedin.com/in/hariharasudhan-h-a28677193/" target="_blank"  underline="none" color={"black"}>
+      <Link
+        href="https://www.linkedin.com/in/hariharasudhan-h-a28677193/"
+        target="_blank"
+        underline="none"
+        color={"black"}
+      >
         <LinkedInIcon sx={{ margin: "1%" }} />
       </Link>
-      <Link href="mailto:hari.sudhan612@gmail.com" target="_blank"  underline="none" color={"black"}>
+      <Link
+        href="mailto:hari.sudhan612@gmail.com"
+        target="_blank"
+        underline="none"
+        color={"black"}
+      >
         <MailRoundedIcon sx={{ margin: "1%" }} />
       </Link>
-      <Link href="https://t.me/hariharasudhan_h" target="_blank"  underline="none" color={"black"}>
+      <Link
+        href="https://t.me/hariharasudhan_h"
+        target="_blank"
+        underline="none"
+        color={"black"}
+      >
         <TelegramIcon sx={{ margin: "1%" }} />
       </Link>
-      <Link href=" https://wa.me/9543691902" target="_blank"  underline="none" color={"black"}>
+      <Link
+        href=" https://wa.me/9543691902"
+        target="_blank"
+        underline="none"
+        color={"black"}
+      >
         <WhatsAppIcon sx={{ margin: "1%" }} />
       </Link>
     </Box>

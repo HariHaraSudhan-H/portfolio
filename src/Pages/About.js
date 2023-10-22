@@ -3,10 +3,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <Box sx={{width:"50%",marginX:"auto",marginY:"2%"}}>
+    <Box sx={{width:{xs:"80%",sm:"70%",md:"50%"},marginX:"auto",marginY:"2%"}}>
       <Typography
-        variant="h4"
-        sx={{ fontFamily: "inherit", fontWeight: "bold",marginY:"2%"}}
+        // variant="h4"
+        sx={{ fontFamily: "inherit", fontWeight: "bold",marginY:"2%",fontSize:"1.5rem"}}
       >
         About
       </Typography>

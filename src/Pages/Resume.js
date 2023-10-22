@@ -1,29 +1,18 @@
 import { Typography } from "@mui/material";
 import React from "react";
-import Box from "@mui/material";
-
+import Box from '@mui/material/Box';
+import "../Styles/resume.css"
 const Resume = () => {
   return (
-    <Box sx={{ width: "50%", marginX: "auto", marginY: "2%" }}>
+    <Box sx={{ width:{xs:"80%",sm:"70%",md:"50%"}, marginX: "auto", marginY: "2%" }}>
       <Typography
         variant="h4"
-        sx={{ fontFamily: "inherit", fontWeight: "bold", marginY: "2%" }}
+        sx={{ fontFamily: "inherit", fontWeight: "bold",marginY:"2%",fontSize:"1.5rem"}}
       >
         Resume
       </Typography>
       <iframe
-          loading="lazy"
-          style={{
-            position: "absolute",
-            width: "60%",
-            height: "80%",
-            top: "15%",
-            left: "20%",
-            border: "none",
-            borderRadius: "10px",
-            padding: 0,
-            margin: 0,
-          }}
+          loading="eager"
           src="https://www.canva.com/design/DAFvSuJJEn4/view?embed"
           allowFullScreen="allowfullscreen"
           allow="fullscreen"
@@ -33,3 +22,5 @@ const Resume = () => {
 };
 
 export default Resume;
+
+// width: {xs:"80%",sm:"70%",md:"50%"} ,

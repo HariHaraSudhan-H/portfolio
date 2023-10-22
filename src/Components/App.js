@@ -5,17 +5,20 @@ import { useState } from "react";
 import About from "../Pages/About";
 import Projects from "../Pages/Projects";
 import Resume from "../Pages/Resume";
+import Certificates from "../Pages/Certificates";
+import Footer from "./Footer";
 function App() {
-  const [value, setValue] = useState("home");
   return (
-    <div className="App">
-      <Navbar value={value} setValue={setValue}/>
+    <div className="App" style={{minHeight: "100vh"}}>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/about" element={<About />}/>
         <Route path="/projects" element={<Projects />}/>
         <Route path="/resume" element={<Resume />}/>
+        <Route path="/certificates" element={<Certificates />}/>
       </Routes>
+      <Footer/>
     </div>
   );
 }
