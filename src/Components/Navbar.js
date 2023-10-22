@@ -4,6 +4,7 @@ import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { navbarItems } from "../Data/constants";
+import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
   const [value, setValue] = useState("home");
@@ -30,39 +31,42 @@ const Navbar = (props) => {
             indicatorColor="none"
             aria-label="secondary tabs example"
           >
-            <Tab
-              value={value}
-              label={<HomeRoundedIcon />}
-              href="/"
-              sx={{
-                width: "auto",
-                minWidth: 50,
-                fontWeight: "bold",
-                fontFamily: "inherit",
-                textTransform: "capitalize",
-                fontSize: "1rem",
-                color: "inherit",
-                padding: "0",
-              }}
-            />
+            <Link to="/" underline="none">
+              <Tab
+                value={value}
+                label={<HomeRoundedIcon />}
+                sx={{
+                  width: "auto",
+                  minWidth: 50,
+                  fontWeight: "bold",
+                  fontFamily: "inherit",
+                  textTransform: "capitalize",
+                  fontSize: "1rem",
+                  color: "black",
+                  padding: "0",
+                }}
+              />
+            </Link>
+
             {navbarItems.map((item, index) => {
               return (
-                <Tab
-                  value={item}
-                  label={item}
-                  href={`/${item}`}
-                  sx={{
-                    width: "auto",
-                    minWidth: 70,
-                    fontWeight: "bold",
-                    fontFamily: "inherit",
-                    textTransform: "capitalize",
-                    fontSize: { xs: "0.75rem", sm: "1rem" },
-                    color: "inherit",
-                    padding: { xs: "0.1rem", sm: "1rem" },
-                  }}
-                  key={index}
-                />
+                <Link to={`/${item}`} underline="none">
+                  <Tab
+                    value={item}
+                    label={item}
+                    sx={{
+                      width: "auto",
+                      minWidth: 70,
+                      fontWeight: "bold",
+                      fontFamily: "inherit",
+                      textTransform: "capitalize",
+                      fontSize: { xs: "0.75rem", sm: "1rem" },
+                      color: "black",
+                      padding: { xs: "0.1rem", sm: "1rem" },
+                    }}
+                    key={index}
+                  />
+                </Link>
               );
             })}
           </Tabs>
