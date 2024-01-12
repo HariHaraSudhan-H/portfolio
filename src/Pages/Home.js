@@ -4,8 +4,8 @@ import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailRoundedIcon from "@mui/icons-material/MailRounded";
-import TelegramIcon from "@mui/icons-material/Telegram";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+// import TelegramIcon from "@mui/icons-material/Telegram";
+// import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 import profilePhoto from "../Data/profile-pic.png"
 const Home = () => {
@@ -18,7 +18,6 @@ const Home = () => {
       />
       <Typography
         sx={{
-          fontWeight: "bold",
           fontSize: {xs:"1.75rem",md:"2rem"},
           marginY: 1,
           fontFamily: "inherit",
@@ -55,22 +54,22 @@ const Home = () => {
       >
         <MailRoundedIcon sx={{ margin: "1%" }} />
       </Link>
-      <Link
+      {/* <Link
         href="https://t.me/hariharasudhan_h"
         target="_blank"
         underline="none"
         color={"black"}
       >
         <TelegramIcon sx={{ margin: "1%" }} />
-      </Link>
-      <Link
+      </Link> */}
+      {/* <Link
         href=" https://wa.me/9543691902"
         target="_blank"
         underline="none"
         color={"black"}
       >
         <WhatsAppIcon sx={{ margin: "1%" }} />
-      </Link>
+      </Link> */}
     </Box>
   );
 };

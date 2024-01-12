@@ -1,6 +1,6 @@
 import { Link, Typography } from "@mui/material";
 import React from "react";
-import { certificates, projects } from "../Data/constants";
+import { certificates } from "../Data/constants";
 import ArticleIcon from '@mui/icons-material/Article';
 import Box from '@mui/material/Box';
 

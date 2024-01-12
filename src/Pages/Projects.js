@@ -22,9 +22,9 @@ const Projects = () => {
               </Typography>
               <Typography sx={{margin:"2%"}}>{project.description}</Typography>
               <Box>
-                <Link href={project.webLink} target="_blank" sx={{margin:"5% 2%"}} underline="none" color={"black"}>
+                {project.webLink && <Link href={project.webLink} target="_blank" sx={{margin:"5% 2%"}} underline="none" color={"black"}>
                   <LanguageRoundedIcon />
-                </Link>
+                </Link>}
                 <Link href={project.githubLink} target="_blank" sx={{margin:"5% 2%"}} underline="none" color={"black"}>
                   <GitHubIcon />
                 </Link>

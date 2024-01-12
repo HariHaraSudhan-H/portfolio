@@ -15,7 +15,7 @@ const Navbar = (props) => {
     <>
       <AppBar
         sx={{
-          background: "linear-gradient(120deg,darkgray,white)",
+          background: "linear-gradient(127deg, darkgray, white);",
           justifyContent: "center",
           alignItems: "center",
           marginX: "5",
@@ -76,7 +76,4 @@ const Navbar = (props) => {
     </>
   );
 };
-
-{
-}
 export default Navbar;
